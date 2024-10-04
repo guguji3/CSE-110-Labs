@@ -3,11 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Web Page</title>
+    <link rel="icon" type="image/png" href="https://www.ucsd.edu/_resources/img/logo_UCSD.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        header img {
+            width: 550px;
+            margin-right: 20px;
+        }
+        nav {
+            text-align: left;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #00356b;
+            font-weight: bold;
+        }
+        section {
+            margin: 40px 20px;
+            text-align: left;
+        }
+        section img {
+            width: 500px;
+            margin: 10px;
+        }
+        section h2 {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h2>My First Web Page</h2>
-    <p>Hello world!</p>
+
+    <header>
+        <img src="https://www.ucsd.edu/_resources/img/logo_UCSD.png" alt="UCSD Logo">
+    </header>
+
+    <nav>
+        <a href="#section1">Section 1 </a>
+        <a href="#section2">Section 2 </a>
+    </nav>
+
+    <section id="section1">
+        <h2>Section 1 </h2>
+        <img 
+src="https://brand.ucsd.edu/_images/logos-and-brand-elements/additional-campus-logos/ucsd-athletics-logo.svg" 
+alt="Tritons Athletics Logo">
+    </section>
+
+    <section id="section2">
+        <h2>Section 2 </h2>
+        <img src="https://brand.ucsd.edu/_images/logos/logos-college-logos-07-23.svg" alt="UCSD 
+College Logos">
+    </section>
+
 </body>
 </html>
 
