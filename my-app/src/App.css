@@ -1,0 +1,129 @@
+/* Individual note styling */
+.note-individual {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main container for the app */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr;
+}
+
+/* Styling for the note form */
+.note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px; /* You can adjust this size as needed */
+  margin: 0 auto;
+}
+
+/* Styling for body */
+body {
+  margin: 20px;
+  background-color: lightgrey;
+}
+
+/* Media query for larger screens */
+@media (min-width: 600px) {
+  .app-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+  }
+}
+
+/* Grid for displaying notes */
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(250px, auto);
+  gap: 20px;
+}
+
+/* Styling for individual note items */
+.note-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Notes header styling */
+.notes-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Styling for buttons in the header */
+.notes-header button {
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  max-width: fit-content;
+}
+
+/* Headings styling */
+h2 {
+  margin: 0;
+}
+
+/* Styling for inputs, textarea, and select to ensure consistent size */
+textarea,
+input,
+select {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%; /* Make all inputs, textareas, and selects have the same width */
+  box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
+
+/* Button styling */
+.note-form button {
+  border-radius: 5px;
+  background-color: rgb(64, 154, 184);
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+.note-form button:hover {
+  background-color: rgb(106, 175, 198);
+  cursor: pointer;
+}
+
+/* Styling for favorite list section */
+.favorites-list h3 {
+  margin: 0px;
+}
+
+.favorites-list p {
+  margin: 0px;
+}
+
+/* Additional styling for edit buttons */
+.edit-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.edit-buttons button {
+  flex: 1;
+}
+
+.edit-buttons button:last-of-type {
+  background-color: rgb(220, 89, 89);
+  color: white;
+}
